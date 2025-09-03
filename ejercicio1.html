@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+    background-color: rgb(0, 139, 134);
+    font-family: sans-serif;
+    display: flex; /* Auto layout-organizacion */
+    height: 100vh;
+    overflow: hidden;
+    justify-content: center; /*horizontal*/
+    align-items: center; /*vertical*/
+    }
+
+    .container {
+    background-color: #967c7c;
+padding: 20px;
+border-radius: 20px;
+box-shadow: 0 4px 10px rgba( 0, 0, 0, 0.1);
+    }
+
+</style>
+<body>
+    <div class="container"> 
+        <h1>Buscador de Productos</h1>
+    <div class="lista-productos">
+    <p> <strong> Lista de productos: </strong> <span id="listaProductosSpan"> </span> </p>
+    </div>
+    </div>
+</body>
+<script>
+      const spanElement= document.getElementById("listaProductosSpan")
+      spanElement.textContent = "Laptop, Impresora"
+    </script>
+</html>
